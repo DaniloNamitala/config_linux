@@ -1,3 +1,7 @@
+#read user and email for git config
+read -p 'Nome (Github): ' NAME
+read -p 'Email (Github): ' EMAIL
+
 #update packages
 sudo apt update
 sudo apt upgrade -y
@@ -6,8 +10,8 @@ sudo apt upgrade -y
 sudo apt install git build-essential xclip neovim wget curl -y
 
 #config git
-git config --global user.name "Danilo Namitala"
-git config --global user.email "danilonamitala@yahoo.com.br"
+git config --global --replace-all  user.name "$NAME"
+git config --global --replace-all  user.email "$EMAIL"
 
 #install tools
 sh install_asdf.sh
