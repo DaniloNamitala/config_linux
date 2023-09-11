@@ -18,6 +18,7 @@ sh install_asdf.sh
 sh install_code.sh
 sh install_python.sh
 sh install_node.sh
+sh install_docker.sh
 
 #set copy paste aliases
 OUTPUT=$(cat ~/.bashrc | grep 'alias c="xclip"')
